@@ -1,0 +1,84 @@
+/* color palette from https://www.color-hex.com/color-palettes */
+:root {
+  --darkest-color: #d8e4dc;
+  --lightest-color: white;
+  --highlight-color: #ffffff;
+  --bright-color-1: #f1c462;
+  --bright-color-2: #688994;
+  --bright-color-3: #90a1a8;
+  --bright-color-4: #c18944;
+}
+
+body {
+  background-color: var(--bright-color-4);
+  background-image: url("images/blur.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: var(--lightest-color);
+  font-family: 'Roboto', sans-serif; 
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.circle-shape {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 55%;
+  border: 6px solid var(--bright-color-4);
+  margin: 0 auto;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+a {
+  color: var(--lightest-color);
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.ig-link {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 25px;
+  color:#4d5656;
+}
+
+.link-list-item {
+  border: 0px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  color: var(--darkest-color);
+  padding: 12px;
+  text-align: center;
+  transition: all 0.15s;
+  border-radius: 50px;
+}
+
+.highlighted,
+.link-list-item:hover,
+a:hover {
+  color: var(--highlight-color);
+  border-color: var(--highlight-color);
+  text-shadow: 0 0 2em var(--highlight-color);
+}
+
+.neon {
+background: linear-gradient(#95b7c0, #688994);
+}
